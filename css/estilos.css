@@ -1,0 +1,519 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* HEADER */
+
+header {
+    background: linear-gradient(rgba(98,181,176,.9), rgba(98,181,176,.8)), url('../img/fondo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height: 600px;
+}
+
+header .menu {
+    margin: 40px 0;
+    text-align: right
+}
+
+header .menu a {
+    margin: 0 20px;
+    color: #fff;
+    padding-bottom: 9px;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    font-size: 20px;
+}
+
+header .menu a:hover {
+ border-bottom:2px solid #fff;
+}
+
+header .contenedor-texto {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 190px;
+}
+
+header .contenedor-texto .texto {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    display: inline-block;
+    text-align: center;
+    padding: 20px 60px;
+}
+
+header .contenedor-texto .texto h1, 
+header .contenedor-texto .texto h2 {
+    color: #fff;
+    font-weight: 300px;
+    margin: 0;
+}
+
+header .contenedor-texto .texto .nombre {
+    margin-bottom: 10px;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+header .contenedor-texto .texto .profesion {
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: 300;
+}
+
+/* MAIN */
+
+.main .contenedor {
+    overflow: visible;
+}
+
+.main .acerca-de {
+    text-align: center;
+}
+
+.main .acerca-de .foto {
+    margin-top: -60px;
+}
+
+.main .acerca-de .foto img{
+    vertical-align: top;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.2)
+}
+
+.main .acerca-de .texto {
+    color: #4cddc0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    width: 80%;
+    margin: 40px auto 60px auto;
+}
+
+em {
+    color: dodgerblue;
+}
+
+.main .acerca-de .texto .titulo {
+    color: dodgerblue;
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.main .acerca-de a {
+    color: #4cddc0;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 30px;
+    width: 30%;
+    margin: 0px auto;
+    text-decoration: none;
+    border: 3px solid dodgerblue;
+    border-radius: 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.main .acerca-de a:hover {
+    background: dodgerblue;
+    color: #fff;
+}
+
+.main .trabajos{
+    background: linear-gradient(rgba(98,181,176,.9), rgba(98,181,176,.8)), url('../img/1.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    max-height: 610px;
+    padding: 60px 0;
+}
+
+.main .trabajos .contenedor {
+    overflow: hidden;
+}
+
+.main .trabajos .titulo {
+    color: #fff;
+    font-size: 34px;
+    line-height: 47px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    display: inline-block;
+    text-align: center;
+    padding: 1px 21px;
+    margin-left: 410px;
+}
+
+.main  .trabajos .contenedor-trabajos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main  .trabajos .contenedor-trabajos .trabajo {
+    width: 50%;
+    align-content: center;
+    margin: 40px auto 60px auto;
+}
+
+.main  .trabajos .contenedor-trabajos .trabajo .thumb {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.main  .trabajos .contenedor-trabajos .trabajo .thumb img {
+    width: 100%;
+    vertical-align: top;
+    border: 5px solid rgba(116, 179, 174, 0.9);
+    border-radius: 3px;
+    display: inline-block;
+    margin-top: -40px;
+    cursor: pointer;
+}
+
+.main  .trabajos .contenedor-trabajos .trabajo .thumb img:hover {
+    background: #3b5998;
+}
+
+.main  .trabajos .contenedor-trabajos .trabajo .descripcion {
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+}
+
+.main  .trabajos .contenedor-trabajos .trabajo .descripcion .categoria {
+    font-size: 1em;
+    line-height: 30px;
+    width: 57%;
+    margin: 0px auto;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    display: inline-block;
+    font-weight: 300;
+}
+
+.main  .trabajos .contenedor-trabajos .trabajo .descripcion .nombre {
+    font-size: 18px;
+    line-height: 30px;
+    width: 57%;
+    font-weight: 700;
+    display: inline-block;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+/* FOOTER */
+
+footer .contacto {
+    padding: 60px 0;
+}
+
+footer .contacto .titulo {
+    color: dodgerblue;
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+footer .contacto .texto {
+    color: #1eb6ff;
+    font-size: 170%;
+    align-content: center;
+    margin: auto;
+    margin-left: 15%;
+}
+
+footer .contacto .formulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .contacto .formulario input[type="text"],
+footer .contacto .formulario input[type="email"],
+footer .contacto .formulario textarea {
+    border: 2px solid #cecece;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 20px;
+    color: #a4a4a4;
+}
+
+footer .contacto .formulario input[type="text"]:focus,
+footer .contacto .formulario input[type="email"]:focus,
+footer .contacto .formulario textarea:focus {
+    border: 2px solid #4cddc0;
+}
+
+footer .contacto .formulario input[type="text"],
+footer .contacto .formulario input[type="email"] {
+    width: 49%;
+    margin-bottom: 15px;
+}
+
+footer .contacto .formulario textarea {
+width: 100%;
+height: 100px;
+min-width: 100%;
+max-width: 100%;
+min-height: 100px;
+max-height: 300px;
+margin-bottom: 15px;
+}
+
+footer .contacto .formulario .boton {
+    margin: auto;
+    background: dodgerblue;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 15px 40px;
+    cursor: pointer;
+}
+
+footer .contacto .formulario .boton:hover {
+    background: rgba(57, 155, 253, 0.733);
+}
+
+footer .redes-sociales {
+    background: #1e2b38;
+    padding: 60px 0;
+}
+
+footer .redes-sociales .contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+footer .redes-sociales a{
+    color: #fff;
+    text-align: center;
+    width: 100px;
+    display: block;
+    padding: 15px 0;
+    border-radius: 3px;
+    font-size: 30px;
+    background: #ccc;
+    margin: 0 30px;
+}
+
+footer .redes-sociales .facebook {
+    background: #3b5998;
+    cursor: pointer;
+}
+
+footer .redes-sociales .facebook:hover {background: #3b589893;}
+
+footer .redes-sociales .instagram {
+    background: #c13584;
+    cursor: pointer;
+}
+
+footer .redes-sociales .instagram:hover {background: #c13584d0;}
+
+footer .redes-sociales .whatsapp {
+    background: #25d366;
+    cursor: pointer;
+}
+
+footer .redes-sociales .whatsapp:hover { background: #25d365b6; }
+
+
+
+/* media queries */
+@media screen and (max-width:800px) {
+    header .menu {
+        text-align: center;
+    }
+
+    header .contenedor-texto .texto .nombre {
+        margin-bottom: -6px;
+        margin-top: -9px;
+        font-size: 25px;
+        line-height: 50px;
+    }
+
+    header .contenedor-texto .texto .profesion {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 300;
+    }
+
+    .main .trabajos .titulo {
+        margin-left: 265px;
+    }
+
+    .main .acerca-de a {
+        color: #4cddc0;
+        font-weight: 600;
+        font-size: 1em;
+        line-height: 30px;
+        width: 44%;
+        margin: 0px auto;
+        text-decoration: none;
+        border: 3px solid dodgerblue;
+        border-radius: 8px;
+    }
+
+    .main .trabajos {
+    background: linear-gradient(rgba(98,181,176,.9), rgba(98,181,176,.8)), url(../img/1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+    max-height: 610px;
+    padding: 60px 0;
+}
+
+    .main .trabajos .contenedor-trabajos .trabajo .descripcion .nombre {
+        font-size: 18px;
+    }
+
+    .main .trabajos .contenedor-trabajos .trabajo .descripcion .categoria {
+        font-size: 12px;
+    }
+
+    .main .trabajos .trabajo {
+        width: 46%;
+    }
+    
+    footer .contacto .texto {
+        color: #1eb6ff;
+        font-size: 141%;
+        align-content: center;
+        margin: auto;
+        margin-left: 6%;
+    }
+}
+
+/* media queries */
+@media screen and (max-width:500px) {
+    
+    header .contenedor-texto {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: -10%;
+        margin-bottom: 124px;
+    }
+
+    header .contenedor-texto .texto {
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 3px;
+        display: inline-block;
+        text-align: center;
+        padding: 0px 89px;
+        margin-top: 28px;
+    }
+
+    header .contenedor-texto .texto .nombre {
+        margin-bottom: -5px;
+        margin-top: -1px;
+        font-size: 25px;
+        line-height: 56px;
+    }
+  
+    header .menu a {
+        margin: 0 20px;
+        color: #fff;
+        padding-bottom: 1px;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+        font-size: 16px;
+        margin-bottom: 17%;
+    }
+
+    .main .acerca-de .texto {
+        color: #4cddc0;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 30px;
+        width: 80%;
+        margin: 40px auto 60px auto;
+    }
+
+    .main .acerca-de a {
+        color: #4cddc0;
+        font-weight: 600;
+        font-size: 1em;
+        line-height: 30px;
+        width: 60%;
+        margin: 0px auto;
+        text-decoration: none;
+        border: 3px solid dodgerblue;
+        border-radius: 8px;
+        margin-top: 10%;
+    }
+
+    .main .trabajos .titulo {
+        margin-left: 80px;
+    }
+
+    .main .trabajos .contenedor-trabajos .trabajo .thumb img {
+        width: 197%;
+        vertical-align: top;
+        border: 5px solid rgba(116, 179, 174, 0.9);
+        border-radius: 11px;
+        display: inline-block;
+        margin-top: 4px;
+        cursor: pointer;
+        margin-left: -47%;
+    }
+
+    .main .trabajos .contenedor-trabajos .trabajo .descripcion .nombre {
+        font-size: 127%;
+        width: 187%;
+        margin-top: 10%;
+        margin-left: -38%;
+    }
+
+    .main .trabajos .contenedor-trabajos .trabajo .descripcion .categoria {
+        font-size: 15px;
+        line-height: 29px;
+        width: 143%;
+        margin: 0px auto;
+        border: 1px solid #fff;
+        border-radius: 3px;
+        display: inline-block;
+        font-weight: 300;
+        margin-left: -15%;
+    }
+
+    footer .redes-sociales a {
+        color: #fff;
+        text-align: center;
+        width: 100px;
+        display: block;
+        padding: 3px 0;
+        border-radius: 3px;
+        font-size: 30px;
+        background: #ccc;
+        margin: 0 30px;
+    }
+
+}
